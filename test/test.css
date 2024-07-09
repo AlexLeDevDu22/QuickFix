@@ -1,0 +1,21 @@
+#checkbox {
+    display: none; /* Pour masquer la checkbox */
+  }
+  
+  #label {
+    cursor: pointer; /* Pour changer le curseur en main lorsqu'on survole le label */
+  }
+  
+  #button {
+    padding: 10px 20px;
+    background-color: #ccc;
+    border: none;
+    color: white;
+    cursor: not-allowed; /* Initialement le bouton est désactivé */
+  }
+  
+  #checkbox:checked + #label + #button {
+    background-color: #007bff; /* Changement de couleur du bouton lorsque la checkbox est cochée */
+    cursor: pointer; /* Le bouton devient cliquable */
+  }
+  
